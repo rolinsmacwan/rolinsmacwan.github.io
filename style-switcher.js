@@ -2,14 +2,14 @@
 let styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
 let isShow = true;
 styleSwitcherToggle.addEventListener("click",() => {
-    document.querySelector(".style-switcher").classList.toggle("open");
+    document.querySelector(".style-switcher").classList.toggle("review");
 })
 
 // hide style switcher  on scroll 
 window.addEventListener("scroll",()=> {
-    if(document.querySelector(".style-switcher").classList.contains("open"))
+    if(document.querySelector(".style-switcher").classList.contains("review"))
     {
-        document.querySelector(".style-switcher").classList.remove("open");
+        document.querySelector(".style-switcher").classList.remove("review");
     }
 })
 
